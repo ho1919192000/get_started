@@ -324,8 +324,78 @@
 #
 # print(dir(tuple()))
 
-d = dict()
-d['a'] = 2
-d['b'] = 4
-for (k, v) in d.items():
-    print(str(k) + ': ' + str(v))
+# d = dict()
+# d['a'] = 2
+# d['b'] = 4
+# for (k, v) in d.items():
+#     print(str(k) + ': ' + str(v))
+# print(d.items())
+
+# (x, y) = (3, 4)
+# print(x)
+
+d = {'a': 10, 'b': 1, 'c': 22}
+# print(d.items())
+#
+# print(sorted(d.items()))
+# for (k, v) in sorted(d.items()):
+#     print(k, v)
+
+# tmp = list()
+# for k, v in d.items():
+#     tmp.append( (v, k) )
+# print(tmp.sort())
+# tmp = sorted(tmp, reverse=True)
+# print(tmp)
+# tmp2 =[]
+# for k, v in tmp:
+#     tmp2.append((v, k))
+# print(tmp2)
+
+# def sortSecond(val):
+#     return val[1]
+# # x = (1, 10)
+# # print(sortSecond(x))
+# tmp = []
+# for k, v in d.items():
+#     tmp.append((k, v))
+# tmp.sort(key=sortSecond, reverse=True)
+# print(tmp)
+# for k, v in tmp:
+#     print(k, v)
+
+# fhand = open('romeo.txt')
+# counts = {}
+# for line in fhand:
+#     words = line.split()
+#     for word in words:
+#         counts[word] = counts.get(word, 0) + 1
+# # lst = []
+# # for k, v in counts.items():
+# #     lst.append((v, k))
+# # lst = sorted(lst, reverse=True)
+# # for k, v in lst[:10]:
+# # #[ start_index : to number but not include
+# #     print(v, k)
+# print(sorted([(v, k) for k, v in counts.items()], reverse=True))
+#
+# name = input("Enter file:")
+# if len(name) < 1 : name = "mbox-short.txt"
+# handle = open(name)
+# counts = {}
+# for line in handle:
+#     if line.startswith('From '):
+#         tmp = line.split()[5][:2]
+#         counts[tmp] = counts.get(tmp, 0) + 1
+# lst = [(k, v) for k, v in counts.items()]
+# l = [i**2 for i in range(4)]
+# print(l)
+# # lst = []
+# # for k, v in counts.items():
+# #     lst.append((k, v))
+# # lst = sorted(lst)
+# for k, v in lst:
+#     print(k, v)
+
+
+
